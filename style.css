@@ -1,0 +1,63 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    border: none;
+    background-color: initial;
+    color: initial;
+    font: initial; /* inherit all of fonts (font-family and font-size)*/   
+    outline: none; /*We remove ugly outline for TAB on keyboard for focus state*/
+}
+input {
+    font: inherit; /*we want to force all of the input fields to inherit all the styles related to the font*/
+    border:none;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* BASE STYLES*/
+.app {
+    font-family: 'Lato', sans-serif; /*if Lato isn't avaible, use sanf-serif font*/
+    font-size: 15px;
+    color: #fff;
+    height: 100vh; /*we don't want to scroll */ 
+    width: 100vw;
+
+
+}
+
+/* STYLES*/
+.app__container {
+
+
+}
+
+.app__interface {
+
+}
+
+h1 {
+
+}
+
+.app__main {
+
+}
+
+.app__icon {
+
+}
+
+.card_button {
+
+}
