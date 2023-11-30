@@ -6,7 +6,7 @@ const refreshEl = document.querySelector(".app__icon");
 const btnPlusIconEl = document.querySelector(".plus__button__icon");
 const btnMinusIconEl = document.querySelector(".minus__button__icon");
 
-let count = 1;
+let count = 0;
 
 btnPlus.addEventListener("click", function () {
   if (count < 5) {
@@ -50,8 +50,8 @@ btnMinus.addEventListener("click", function () {
 });
 
 refreshEl.addEventListener("click", function () {
-  counterEL.textContent = "1";
-  count = 1;
+  counterEL.textContent = "0";
+  count = 0;
   nameEl.innerHTML = "Fancy <br />Counter";
 
   // Clear the previous animation before applying a new one
