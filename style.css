@@ -59,6 +59,15 @@ a {
     font-weight: 700;
 }
 
+
+@keyframes make-bigger {
+    0% {
+       transform: scale(1);
+    }
+    100% {
+        transform: scale(1.8);
+    }
+}
 /* STYLES*/
 .app__container {
     height: 515px;
@@ -85,7 +94,7 @@ a {
     color: rgba(30,36,8, 0.6);
     margin-top: 50px;
     margin-bottom: 20px;
-    line-height: 0.8;
+    line-height: 1;
     
    
 }
@@ -101,6 +110,11 @@ a {
     font-size: 30px;
     color: rgba(30,36,8, 0.4);
 
+}
+
+.app__icon:hover {
+    color: #000;
+    
 }
 
 .app__main {
@@ -123,14 +137,22 @@ a {
     color: #ADE705;
     font-size: 50px;
     width: 50%;
+    transition: all 0.8s;
+}
 
+.button:hover {
+    background-color: #555A5B;
 }
 
 .minus__button {
     border-right: 1px solid rgba(173,231,5, 0.3);
     font-size: 25px;
+    border-bottom-left-radius: 10px; 
 }
 
 .plus__button {
     font-size: 25px;
+    border-bottom-right-radius: 10px; 
 }
+
+
