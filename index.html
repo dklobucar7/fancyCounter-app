@@ -12,7 +12,7 @@
       integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ=="
       crossorigin="anonymous"
     />
-    <!--FONT AWESOME-->
+    <!-- FONTAWESOME-ICONS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -25,15 +25,20 @@
   </head>
   <body class="app">
     <div class="app__container">
-      <div class="app__interface">
-        <h1>Fancy Counter</h1>
-        <main class="app_main"></main>
-        <img src="" alt="" class="app__icon" />
-        <section class="button">
-          <button class="button card_button"></button>
-          <button class="button card_button"></button>
-        </section>
-      </div>
+      <h1>Fancy <br />Counter</h1>
+      <main class="app__main">
+        <div class="app__counter">1</div>
+        <i class="fas fa-retweet app__icon"></i>
+      </main>
+
+      <section class="button__group">
+        <button class="button minus__button">
+          <i class="fas fa-minus"></i>
+        </button>
+        <button class="button plus__button">
+          <i class="fas fa-plus"></i>
+        </button>
+      </section>
     </div>
 
     <script src="script.js" charset="UTF-8"></script>
