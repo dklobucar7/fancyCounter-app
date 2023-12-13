@@ -81,6 +81,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.4s;
+}
+
+.app__container--limit {
+    background-color: #a3d11b;
 }
 
 .app__interface {
@@ -106,13 +111,13 @@ a {
 
 }
 
-.app__icon {
+.reset__app__icon {
     font-size: 30px;
     color: rgba(30,36,8, 0.4);
 
 }
 
-.app__icon:hover {
+.reset__app__icon:hover {
     color: #000;
     cursor: pointer;
 
