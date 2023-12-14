@@ -1,189 +1,169 @@
-/* CSS RESET */
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 button {
-    border: none;
-    background-color: initial;
-    color: initial;
-    font: initial; /* inherit all of fonts (font-family and font-size)*/   
-    outline: none; /*We remove ugly outline for TAB on keyboard for focus state*/
+  border: none;
+  background-color: initial;
+  color: initial;
+  font: initial; /* inherit all of fonts (font-family and font-size)*/
+  outline: none; /*We remove ugly outline for TAB on keyboard for focus state*/
 }
+
 input {
-    font: inherit; /*we want to force all of the input fields to inherit all the styles related to the font*/
-    border:none;
+  font: inherit; /*we want to force all of the input fields to inherit all the styles related to the font*/
+  border: none;
 }
+
 ul {
-    list-style: none;
+  list-style: none;
 }
+
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
-/* BASE STYLES*/
 .app {
-    font-family: 'Lato', sans-serif; /*if Lato isn't avaible, use sanf-serif font*/
-    font-size: 15px;
-    color: #000;
-    height: 100vh; /*we don't want to scroll */ 
-    width: 100vw;
-    background: linear-gradient(to right top,#242B01, #2C3E01);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: "Lato", sans-serif; /*if Lato isn't avaible, use sanf-serif font*/
+  font-size: 15px;
+  color: #000;
+  height: 100vh; /*we don't want to scroll */
+  width: 100vw;
+  background: linear-gradient(to right top, #242B01, #2C3E01);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* UTILITY CLASS */
 .u-italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 .u-accent {
-    color: #000f;
+  color: black;
 }
 
 .u-underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .u-bold {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .u-bolder {
-    font-weight: 700;
+  font-weight: 700;
 }
-
 
 @keyframes make-bigger {
-    0% {
-       transform: scale(1);
-    }
-    100% {
-        transform: scale(1.8);
-    }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.8);
+  }
 }
-/* STYLES*/
 .app__container {
-    height: 515px;
-    width: 400px;
-    margin:0;
-    padding: 0;
-    color: #1E2408;
-    border: black 1px solid;
-    border-radius: 10px;
-    background-color: #BFF228;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.4s;
+  height: 515px;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  color: #1E2408;
+  border: black 1px solid;
+  border-radius: 10px;
+  background-color: #BFF228;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s;
 }
-
 .app__container--limit {
-    background-color: #a3d11b;
-}
-
-.app__interface {
-
+  background-color: #a3d11b;
 }
 
 .app__name {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 500;
-    color: rgba(30,36,8, 0.6);
-    margin-top: 50px;
-    margin-bottom: 20px;
-    line-height: 1;
-    
-   
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  color: rgba(30, 36, 8, 0.6);
+  margin-top: 50px;
+  margin-bottom: 20px;
+  line-height: 1;
 }
 
 .app__counter {
-    font-size: 125px;
-    margin-bottom: 5px;
-
-
+  font-size: 125px;
+  margin-bottom: 5px;
 }
 
 .reset__app__icon {
-    font-size: 30px;
-    color: rgba(30,36,8, 0.4);
-
+  font-size: 30px;
+  color: rgba(30, 36, 8, 0.4);
 }
-
 .reset__app__icon:hover {
-    color: #000;
-    cursor: pointer;
-
+  color: #000;
+  cursor: pointer;
 }
 
 .app__main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
 }
 
-.button__group{
-    background-color: #1d2507;
-    width: 100%;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-
+.button__group {
+  background-color: #1d2507;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
 }
 
 .button {
-    color: #ADE705;
-    font-size: 50px;
-    flex:1;
-    transition: all 0.4s;
+  color: #ADE705;
+  font-size: 50px;
+  flex: 1;
+  transition: all 0.4s;
 }
-
 .button:hover {
-    background-color: #212b06;
-    cursor: pointer;
+  background-color: #212b06;
+  cursor: pointer;
 }
 
 .minus__button {
-    border-right: 1px solid rgba(173,231,5, 0.3);
-    font-size: 25px;
-    border-bottom-left-radius: 10px; 
+  border-right: 1px solid rgba(173, 231, 5, 0.3);
+  font-size: 25px;
+  border-bottom-left-radius: 10px;
 }
 
 .plus__button {
-    font-size: 25px;
-    border-bottom-right-radius: 10px; 
+  font-size: 25px;
+  border-bottom-right-radius: 10px;
 }
 
-
-@media (max-width:500px) or (max-height:730px) {
-    .app__container {
-        width: 100%;
-        height: 100%;
-        border-radius: 0;
-    }
-
-    .app__main {
-        margin-top: auto;
-    }
-
-    .button__group {
-        margin-top: auto;
-    }
-    .minus__button {
-        border-bottom-left-radius: 0; 
-    }
-
-    .plus__button {
-
-        border-bottom-right-radius: 0; 
-    }
+@media (max-width: 500px) or (max-height: 730px) {
+  .app__container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .app__main {
+    margin-top: auto;
+  }
+  .button__group {
+    margin-top: auto;
+  }
+  .minus__button {
+    border-bottom-left-radius: 0;
+  }
+  .plus__button {
+    border-bottom-right-radius: 0;
+  }
 }
